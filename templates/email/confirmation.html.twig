@@ -1,0 +1,5 @@
+Hello {{ user.getName() }},
+
+Please confirm your email address, by clicking the link below
+
+<a href="{{ url('default_confirm_token', {'token': user.getConfirmationToken()}) }}">this link</a>
